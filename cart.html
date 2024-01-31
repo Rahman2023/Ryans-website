@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://www.ryanscomputers.com/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- header section start here  -->
+    <header>
+      <!-- nav section start here -->
+
+      <!-- top nav start here -->
+      <nav class="navbar navbar-expand-lg navbar-dark top-header">
+        <div class="container">
+          <ul class="navbar-nav m-auto me-md-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active top-header-info"
+                href="tel:8809638442121"
+                ><div class="circle-font"><i class="fas fa-phone-alt"></i></div>
+                &nbsp; +8809638442121</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active top-header-info"
+                href="mailto:info@ryansbd.com"
+                ><div class="circle-font"><i class="far fa-envelope"></i></div>
+                &nbsp; info@ryansbd.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- top nav end here -->
+      <!-- midel nav start here -->
+      <nav class="navbar navbar-expand-lg navbar-dark main-menu sticky-top">
+        <div class="container">
+          <div class="main-logo d-none d-lg-block">
+            <a href="#"
+              ><img
+                src="image/ryans-logo.svg"
+                alt="Ryans Computers"
+                width="100%"
+                height="100%"
+            /></a>
+          </div>
+          <div class="menu-logo-button d-lg-none">
+            <div class="row g-1 w-100 align-items-center">
+              <div class="col-4">
+                <img
+                  id="menuIcon"
+                  class="menu-icon"
+                  src="image/menu-list.svg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4 text-center mt-0">
+                <a class="mobile-logo" href="#"
+                  ><img
+                    src="image/ryans-logo.svg"
+                    alt="Ryans Computers"
+                    width="100%"
+                    height="100%"
+                /></a>
+              </div>
+              <div class="col-4">
+                <div class="top-cart-section">
+                  <button
+                    class="text-white text-decoration-none border-0 bg-transparent"
+                    id="toggle"
+                    aria-label="search mobile button"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <a
+                    class="text-white text-decoration-none mobile-menu-cart"
+                    href="/wishlist"
+                    aria-label="wishlist"
+                    ><i class="fas fa-heart"></i>
+                    <span
+                      class="position-absolute translate-middle badge rounded-pill bg-danger mobile-menu-badge"
+                      >0</span
+                    >
+                  </a>
+                  <button
+                    class="text-white text-decoration-none mobile-menu-cart border-0 bg-transparent"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-label="cart-mobile"
+                  >
+                    <i class="fas fa-cart-arrow-down"></i>
+                    <span
+                      class="position-absolute translate-middle badge rounded-pill bg-danger mobile-menu-badge"
+                    >
+                      0
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-with-box">
+            <div
+              class="search-menu-div search-mobile"
+              id="search-box"
+              style="display: none"
+            >
+              <ul class="navbar-nav m-auto me-md-auto mb-2 mb-lg-0">
+                <form class="d-flex search-form" action="#" method="get">
+                  <div class="input-group">
+                    <input
+                      type="search"
+                      name="q"
+                      id="search"
+                      class="form-control search-input"
+                      autocomplete="off"
+                      placeholder="Enter Your Keyword..."
+                    />
+                    <button
+                      class="btn search-btn"
+                      type="submit"
+                      aria-label="Search"
+                    >
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </ul>
+            </div>
+            <div class="snize-ac-results">
+              <div id="alg-search-result" class="alg-search-result">
+                <ul id="search-result-products"></ul>
+                <ul class="view-all hide" id="viewAllButton">
+                  <li>
+                    <a href="#" id="full-page-search-view">View all result</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="pc-build-customer-menu">
+            <div class="menu-pc-buider">
+              <a class="pc-button2" href="#"><span>PC BUILDER</span></a>
+            </div>
+            <div class="top-menu-section">
+              <ul
+                class="navbar-nav ms-xl-auto mb-lg-0 justify-content-between align-items-center"
+              >
+                <li
+                  class="nav-item menu-cart ac"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title=""
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-original-title="Shopping Cart"
+                >
+                  <button
+                    class="nav-link active border-0 bg-transparent pb-0"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-label="cart desktop"
+                  >
+                    <i class="fas fa-cart-arrow-down"></i>
+                  </button>
+                  <span
+                    class="position-absolute translate-middle badge rounded-pill bg-danger menu-badge"
+                  >
+                    0
+                  </span>
+                </li>
+                <li
+                  class="nav-item menu-cart ac"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title=""
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-original-title="Favorite"
+                >
+                  <a class="nav-link active pb-0" href="#" aria-label="wishlist"
+                    ><i class="fas fa-heart"></i
+                  ></a>
+                  <span
+                    class="position-absolute translate-middle badge rounded-pill bg-danger menu-badge"
+                  >
+                    0
+                  </span>
+                </li>
+                <li
+                  class="nav-item menu-cart ac"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title=""
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-original-title="Compare"
+                >
+                  <a class="nav-link pb-0 active" href="#"
+                    ><i class="fas fa-exchange-alt"></i>
+                    <span
+                      class="position-absolute translate-middle badge rounded-pill bg-danger menu-badge"
+                      >0</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-item menu-cart ac">
+                  <a
+                    class="nav-link pb-0 active"
+                    data-bs-toggle="tooltip"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    href="#"
+                    data-bs-original-title="Account"
+                    aria-label="Account"
+                    ><i class="fas fa-user-circle"></i
+                  ></a>
+                </li>
+                <li class="nav-item menu-pc-builder ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                  >
+                    <i class="fas fa-desktop"></i>PC Builder</a
+                  >
+                </li>
+                <li class="nav-item menu-product-book ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                    ><i class="fas fa-box-open"></i>Offers</a
+                  >
+                </li>
+                <li class="nav-item menu-query ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                    ><i class="fas fa-blog"></i>Blog</a
+                  >
+                </li>
+                <li class="nav-item menu-query ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                    ><i class="fas fa-exchange-alt"></i>Compare</a
+                  >
+                </li>
+                <li class="nav-item menu-account ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                    ><i class="fas fa-user-circle"></i>Account</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- midel nav end here -->
+
+      <!-- last nav menu start here -->
+      <nav
+        id="navbar_main"
+        class="mobile-offcanvas navbar navbar-expand-lg navbar-dark"
+      >
+        <div class="container d-block">
+          <div class="offcanvas-header">
+            <button
+              class="btn-close close float-end"
+              aria-label="menu close"
+            ></button>
+          </div>
+          <ul
+            class="navbar-nav justify-content-between flex-nowrap align-items-lg-center me-auto"
+          >
+            <li class="nav-item active">
+              <a class="nav-link ps-lg-0" href="#" aria-label="home"
+                ><i class="fa fa-home" aria-hidden="true"></i
+              ></a>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Laptop
+              </button>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-2">
+                  <div class="col-lg-3 col-12 mt-0">
+                    <div class="col-megamenu">
+                      <ul class="list-unstyled">
+                        <li><a href="#" class="fw-bold">All Laptop</a></li>
+                        <li><a href="#">Acer</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Asus</a></li>
+                        <li><a href="#">Chuwi</a></li>
+                        <li><a href="#">Dell</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-12 mt-0">
+                    <div class="col-megamenu">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Gigabyte</a></li>
+                        <li><a href="#">Hp</a></li>
+                        <li><a href="#">Huawei</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Microsoft</a></li>
+                        <li><a href="#">MSI</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-12 mt-0">
+                    <div class="col-megamenu">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Avita</a></li>
+                        <li><a href="#">Infinix</a></li>
+                        <li><a href="#">Samsung</a></li>
+                      </ul>
+                      <ul class="list-unstyled">
+                        <li><a href="#" class="fw-bold">Accessories</a></li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Laptop Ram</a>
+                          <ul class="dropdown-menu2">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Adata </a></li>
+                            <li><a href="#">Apacer </a></li>
+                            <li><a href="#">Corsair </a></li>
+                            <li><a href="#">Crucial </a></li>
+                            <li><a href="#">G.skill </a></li>
+                            <li><a href="#">Geil </a></li>
+                            <li><a href="#">Hp </a></li>
+                            <li><a href="#">Kingston </a></li>
+                            <li><a href="#">Netac </a></li>
+                            <li><a href="#">OCPC </a></li>
+                            <li><a href="#">Patriot </a></li>
+                            <li><a href="#">Ramaxel </a></li>
+                            <li><a href="#">Team </a></li>
+                            <li><a href="#">Transcend </a></li>
+                            <li><a href="#">Twinmos </a></li>
+                          </ul>
+                        </li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Laptop Cooler</a>
+                          <ul class="dropdown-menu2">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Cooler Master </a></li>
+                            <li><a href="#">Deepcool </a></li>
+                            <li><a href="#">Fantech </a></li>
+                            <li><a href="#">Havit </a></li>
+                            <li><a href="#">Marvo </a></li>
+                            <li><a href="#">Orico </a></li>
+                            <li><a href="#">Redragon </a></li>
+                            <li><a href="#">Thermaltake </a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-12 mt-0">
+                    <div class="col-megamenu">
+                      <ul class="list-unstyled">
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Caddy</a>
+                          <ul class="dropdown-menu2">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">K2 </a></li>
+                            <li><a href="#">Orico </a></li>
+                          </ul>
+                        </li>
+
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Laptop Bag</a>
+                          <ul class="dropdown-menu2 menu2-height">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Asus </a></li>
+                            <li><a href="#">Baseus </a></li>
+                            <li><a href="#">Exclusive </a></li>
+                            <li><a href="#">Fantech </a></li>
+                            <li><a href="#">Fiesta </a></li>
+                            <li><a href="#">K2 </a></li>
+                            <li><a href="#">Microsoft </a></li>
+                            <li><a href="#">Targus </a></li>
+                            <li><a href="#">Tucano </a></li>
+                            <li><a href="#">Ugreen </a></li>
+                            <li><a href="#">Wiwu </a></li>
+                          </ul>
+                        </li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Stand</a>
+                          <ul class="dropdown-menu2">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Cooler Master </a></li>
+                            <li><a href="#">Orico </a></li>
+                            <li><a href="#">Ugreen </a></li>
+
+                            <li><a href="#">Yuanxin </a></li>
+                          </ul>
+                        </li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Battery</a>
+                          <ul class="dropdown-menu2">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Apple </a></li>
+                            <li><a href="#">Asus </a></li>
+                            <li><a href="#">Dell </a></li>
+                            <li><a href="#">Fujitsu </a></li>
+                            <li><a href="#">Microsoft </a></li>
+                            <li><a href="#">MSI </a></li>
+                            <li><a href="#">Sony </a></li>
+                            <li><a href="#">Toshiba </a></li>
+                          </ul>
+                        </li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Adapter</a>
+                          <ul class="dropdown-menu2 menu2-height">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Acer </a></li>
+                            <li><a href="#">Apple </a></li>
+                            <li><a href="#">Asus </a></li>
+                            <li><a href="#">Dell </a></li>
+                            <li><a href="#">Fujitsu </a></li>
+                            <li><a href="#">Hp </a></li>
+                            <li><a href="#">Lenovo </a></li>
+                            <li><a href="#">Microsoft </a></li>
+                            <li><a href="#">Samsung </a></li>
+                            <li><a href="#">Sony </a></li>
+                            <li><a href="#">Toshiba </a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Desktop and Server
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Gaming
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Monitor
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Tablet PC
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Printer
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Camera
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Security System
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Network
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Sound System
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Office Items
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Accessories
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Software
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Daily Life
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Store
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- last nav menu end here -->
+
+      <!-- nav section end here -->
+    </header>
+    <!-- header section start here  -->
+
+    <!-- =============================================================== -->
+
+    <main>
+      <div class="category-pagination-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="card">
+                <div class="card-body">
+                  <a href=""><i class="fa fa-home"></i></a>
+                  <i class="fa fa-long-arrow-right"></i>
+                  <a href="">Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-section mt-lg-3 mt-2 mb-3">
+        <div class="container">
+          <div class="row g-2">
+            <div class="col-lg-8 col-12 cart-detail-column">
+              <div class="card">
+                <div
+                  class="card-header d-flex justify-content-between align-items-center p-2"
+                >
+                  <span class="cart-qty-text"
+                    >You have (<span>0</span>) items in your cart</span
+                  >
+                  <a class="fw-bold need-help-button"
+                    ><div class="d-lg-block d-none">
+                      <i class="fas fa-headset"></i> Need Help?
+                    </div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="grid-container pc-build-item mt-lg-2 mt-1 mb-3">
+                    <div class="row g-1 align-items-center mb-lg-0 mb-3">
+                      <div class="col-md-2 col-3">
+                        <div
+                          class="d-flex align-items-center justify-content-around cart-check-all"
+                        >
+                          <input type="checkbox" id="checkAll" /><span
+                            >Check All</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12 pt-lg-0 pt-3 cart-summary-column">
+              <div class="card">
+                <div class="card-header">
+                  <span>Price Details</span>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="d-flex align-items-center justify-content-between pb-2"
+                  >
+                    <span>Sub Total</span>
+                    <span class="totals-value"
+                      >Tk <span id="cart-subtotal">0</span></span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pb-2"
+                  >
+                    <span>Ecom Discount</span>
+                    <span class="totals-value"
+                      >Tk <span id="delivery-subtotal">0</span></span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <span>Total</span>
+                    <span class="totals-value"
+                      >Tk <span id="cart-total">0</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cart-btns d-grid gap-2 pt-3">
+                <a
+                  href=""
+                  class="btn btn1 w-100"
+                  style="width: 350px"
+                  type="button"
+                  >Continue Shopping</a
+                >
+                <a
+                  href=" "
+                  class="btn btn2 w-100"
+                  id="checkout_btn"
+                  type="button"
+                  >Regular Checkout</a
+                >
+                <input type="hidden" name="is_express_checkout" value="yes" />
+                <a href=" " class="btn btn2 w-100" id="express_checkout_btn"
+                  >Express Checkout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- =========================================================================== -->
+
+    <!-- footer section start here -->
+    <div class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 footer-info">
+            <a href="#"
+              ><img
+                src="image/ryans-logo.svg"
+                alt=""
+                class="footer-logo"
+                width="100%"
+                height="100%"
+            /></a>
+            <div class="social-links mt-3">
+              <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fab fa-youtube"></i></a>
+
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <div class="footer-complaint-link">
+              <a
+                class="text-white text-decoration-none ms-2 ms-lg-4 bg-danger"
+                href="#"
+              >
+                Complaint Box
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 footer-links extra-border1">
+            <ul>
+              <li><a href="#"> About us </a></li>
+              <li><a href="#"> Branches &amp; Pickup Points </a></li>
+              <li><a href="#"> Warranty </a></li>
+              <li><a href="#"> EMI </a></li>
+              <li><a href="#"> Cookie Policy </a></li>
+              <li><a href="#"> ডিজিটাল কমার্স নির্দেশিকা ২০২১ </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-6 footer-links extra-border2">
+            <ul>
+              <li><a href="#"> Order Procedure </a></li>
+              <li><a href="#"> Home Delivery </a></li>
+              <li><a href="#"> Return &amp; Refund Policy </a></li>
+              <li><a href="#"> Payment Method </a></li>
+              <li><a href="#"> Terms &amp; Conditions </a></li>
+              <li><a href="#"> Privacy policy </a></li>
+              <li class="glossary-in-footer"><a href="#">Glossary</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-links footer-contact">
+            <ul>
+              <li class="contact-us-text text-white pb-0">Contact Us</li>
+            </ul>
+            <p>
+              Head office <br />
+              Ryans Computers Limited <br />
+              Kusholi Bhaban, 4th Floor, 238/1 Begum Rokeya Sharani, Agargaon,
+              Dhaka-1207 <br />
+              <span class="d-lg-none">
+                <i class="fa fa-envelope"></i> info@ryansbd.com<br />
+              </span>
+              <span
+                class="d-flex justify-content-center justify-content-lg-start align-items-center"
+              >
+                <i class="fas fa-phone-alt"></i>
+                <a
+                  class="text-decoration-none text-white p-0"
+                  href="tel:8809638442121"
+                  >+8809638442121</a
+                >,
+                <a
+                  class="text-decoration-none text-white p-0"
+                  href="tel:8809604442121"
+                  >+8809604442121</a
+                ></span
+              >
+              <i class="fab fa-whatsapp ws-color"></i>
+              <a class="text-decoration-none text-white p-0" href="#">
+                +8801755513900</a
+              >
+              (Message only)<br />
+              <i class="fas fa-map-marker-alt map-icon"></i> Map Link:
+              <a class="home-page-footer-seo-anchor-link-color" href="#">
+                https://tinyurl.com/ryans-head-office</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          Prices are subject to change without any prior notice.
+        </div>
+        <div class="copyright pt-1">
+          Ryans Computers © 2024 All Rights Reserved. Designed by Ryans
+          Computers Ltd.
+        </div>
+        <input type="hidden" name="today" value="2024-01-22" />
+      </div>
+    </div>
+    <!-- footer section end here -->
+
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

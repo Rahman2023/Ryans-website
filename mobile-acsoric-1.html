@@ -1,0 +1,2742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://www.ryanscomputers.com/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- header section start here  -->
+    <header>
+      <!-- top scroll btn -->
+      <button id="bttbutton" class="show">
+        <a href="#"></a>
+      </button>
+      <!-- top scroll btn -->
+      <!-- nav section start here -->
+
+      <!-- top nav start here -->
+      <nav class="navbar navbar-expand-lg navbar-dark top-header">
+        <div class="container">
+          <ul class="navbar-nav m-auto me-md-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active top-header-info"
+                href="tel:8809638442121"
+                ><div class="circle-font"><i class="fas fa-phone-alt"></i></div>
+                &nbsp; +8809638442121</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active top-header-info"
+                href="mailto:info@ryansbd.com"
+                ><div class="circle-font"><i class="far fa-envelope"></i></div>
+                &nbsp; info@ryansbd.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- top nav end here -->
+      <!-- midel nav start here -->
+      <nav class="navbar navbar-expand-lg navbar-dark main-menu sticky-top">
+        <div class="container">
+          <div class="main-logo d-none d-lg-block">
+            <a href="#"
+              ><img
+                src="image/ryans-logo.svg"
+                alt="Ryans Computers"
+                width="100%"
+                height="100%"
+            /></a>
+          </div>
+          <div class="menu-logo-button d-lg-none">
+            <div class="row g-1 w-100 align-items-center">
+              <div class="col-4">
+                <img
+                  id="menuIcon"
+                  class="menu-icon"
+                  src="image/menu-list.svg"
+                  alt=""
+                />
+              </div>
+              <div class="col-4 text-center mt-0">
+                <a class="mobile-logo" href="#"
+                  ><img
+                    src="image/ryans-logo.svg"
+                    alt="Ryans Computers"
+                    width="100%"
+                    height="100%"
+                /></a>
+              </div>
+              <div class="col-4">
+                <div class="top-cart-section">
+                  <button
+                    class="text-white text-decoration-none border-0 bg-transparent"
+                    id="toggle"
+                    aria-label="search mobile button"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <a
+                    class="text-white text-decoration-none mobile-menu-cart"
+                    href="#"
+                    aria-label="wishlist"
+                    ><i class="fas fa-heart"></i>
+                    <span
+                      class="position-absolute translate-middle badge rounded-pill bg-danger mobile-menu-badge"
+                      >0</span
+                    >
+                  </a>
+                  <button
+                    class="text-white text-decoration-none mobile-menu-cart border-0 bg-transparent"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-label="cart-mobile"
+                  >
+                    <i class="fas fa-cart-arrow-down"></i>
+                    <span
+                      class="position-absolute translate-middle badge rounded-pill bg-danger mobile-menu-badge"
+                    >
+                      0
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-with-box">
+            <div
+              class="search-menu-div search-mobile"
+              id="search-box"
+              style="display: none"
+            >
+              <ul class="navbar-nav m-auto me-md-auto mb-2 mb-lg-0">
+                <form class="d-flex search-form" action="#" method="get">
+                  <div class="input-group">
+                    <input
+                      type="search"
+                      name="q"
+                      id="search"
+                      class="form-control search-input"
+                      autocomplete="off"
+                      placeholder="Enter Your Keyword..."
+                    />
+                    <button
+                      class="btn search-btn"
+                      type="submit"
+                      aria-label="Search"
+                    >
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </ul>
+            </div>
+          </div>
+          <div class="pc-build-customer-menu">
+            <div class="menu-pc-buider">
+              <a class="pc-button2" href="#"><span>PC BUILDER</span></a>
+            </div>
+            <div class="top-menu-section">
+              <ul
+                class="navbar-nav ms-xl-auto mb-lg-0 justify-content-between align-items-center"
+              >
+                <li
+                  class="nav-item menu-cart ac"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title=""
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-original-title="Shopping Cart"
+                >
+                  <button
+                    class="nav-link active border-0 bg-transparent pb-0"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-label="cart desktop"
+                  >
+                    <i class="fas fa-cart-arrow-down"></i>
+                  </button>
+                  <span
+                    class="position-absolute translate-middle badge rounded-pill bg-danger menu-badge"
+                  >
+                    0
+                  </span>
+                </li>
+                <li
+                  class="nav-item menu-cart ac"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title=""
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-original-title="Favorite"
+                >
+                  <a class="nav-link active pb-0" href="#" aria-label="wishlist"
+                    ><i class="fas fa-heart"></i
+                  ></a>
+                  <span
+                    class="position-absolute translate-middle badge rounded-pill bg-danger menu-badge"
+                  >
+                    0
+                  </span>
+                </li>
+                <li
+                  class="nav-item menu-cart ac"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title=""
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-original-title="Compare"
+                >
+                  <a class="nav-link pb-0 active" href="#"
+                    ><i class="fas fa-exchange-alt"></i>
+                    <span
+                      class="position-absolute translate-middle badge rounded-pill bg-danger menu-badge"
+                      >0</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-item menu-cart ac">
+                  <a
+                    class="nav-link pb-0 active"
+                    data-bs-toggle="tooltip"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    href="#"
+                    data-bs-original-title="Account"
+                    aria-label="Account"
+                    ><i class="fas fa-user-circle"></i
+                  ></a>
+                </li>
+                <li class="nav-item menu-pc-builder ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                  >
+                    <i class="fas fa-desktop"></i>PC Builder</a
+                  >
+                </li>
+                <li class="nav-item menu-product-book ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                    ><i class="fas fa-box-open"></i>Offers</a
+                  >
+                </li>
+                <li class="nav-item menu-query ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                    ><i class="fas fa-blog"></i>Blog</a
+                  >
+                </li>
+                <li class="nav-item menu-query ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                    ><i class="fas fa-exchange-alt"></i>Compare</a
+                  >
+                </li>
+                <li class="nav-item menu-account ac">
+                  <a
+                    class="nav-link active d-flex align-items-center flex-column"
+                    href="#"
+                    ><i class="fas fa-user-circle"></i>Account</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- midel nav end here -->
+
+      <!-- chackout page -->
+      <div
+        class="offcanvas offcanvas-end cart-sidebar show"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+        aria-modal="true"
+        role="dialog"
+        style="visibility: visible"
+      >
+        <div
+          class="d-flex p-3 px-3 align-items-center justify-content-between cart-sidebar-header"
+        >
+          <span class="fw-bold"
+            ><i class="fas fa-cart-arrow-down"></i> Cart (0)</span
+          >
+          <button
+            class="close border-0 bg-transparent"
+            data-bs-dismiss="offcanvas"
+            aria-label="cart-mobile"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="grid-container cart-upper-container">
+            <div class="row"></div>
+          </div>
+          <div class="grid-container cart-lower-container">
+            <div class="row">
+              <div class="col-12 text-center pt-2">
+                <h6 class="fw-bold">Sub Total: Tk 0</h6>
+              </div>
+              <div class="col-12">
+                <div class="d-grid gap-2">
+                  <a href="cart.html" class="btn btn1">View Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- chackout page -->
+
+      <!-- last nav menu start here -->
+      <nav
+        id="navbar_main"
+        class="navbar navbar-expand-lg navbar-dark hideMenu"
+      >
+        <div class="container d-block">
+          <ul
+            class="navbar-nav justify-content-between flex-nowrap align-items-lg-center me-auto"
+          >
+            <li class="nav-item active">
+              <a class="nav-link ps-lg-0" href="#"
+                ><i class="fa fa-home"></i
+              ></a>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Laptop
+              </button>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-2">
+                  <div class="col-lg-3 col-12 mt-0">
+                    <div class="col-megamenu">
+                      <ul class="list-unstyled">
+                        <li><a href="#" class="fw-bold">All Laptop</a></li>
+                        <li><a href="#">Acer</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Asus</a></li>
+                        <li><a href="#">Chuwi</a></li>
+                        <li><a href="#">Dell</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-12 mt-0">
+                    <div class="col-megamenu">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Gigabyte</a></li>
+                        <li><a href="#">Hp</a></li>
+                        <li><a href="#">Huawei</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Microsoft</a></li>
+                        <li><a href="#">MSI</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-12 mt-0">
+                    <div class="col-megamenu">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Avita</a></li>
+                        <li><a href="#">Infinix</a></li>
+                        <li><a href="#">Samsung</a></li>
+                      </ul>
+                      <ul class="list-unstyled">
+                        <li><a href="#" class="fw-bold">Accessories</a></li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Laptop Ram</a>
+                          <ul class="dropdown-menu2 menu2-height">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Acer </a></li>
+                            <li><a href="#">Apple </a></li>
+                            <li><a href="#">Asus </a></li>
+                            <li><a href="#">Dell </a></li>
+                            <li><a href="#">Fujitsu </a></li>
+                            <li><a href="#">Hp </a></li>
+                            <li><a href="#">Lenovo </a></li>
+                            <li><a href="#">Microsoft </a></li>
+                            <li><a href="#">Samsung </a></li>
+                            <li><a href="#">Sony </a></li>
+                            <li><a href="#">Toshiba </a></li>
+                          </ul>
+                        </li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Laptop Cooler</a>
+                          <ul class="dropdown-menu2 menu2-height">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Acer </a></li>
+                            <li><a href="#">Apple </a></li>
+                            <li><a href="#">Asus </a></li>
+                            <li><a href="#">Dell </a></li>
+                            <li><a href="#">Fujitsu </a></li>
+                            <li><a href="#">Hp </a></li>
+                            <li><a href="#">Lenovo </a></li>
+                            <li><a href="#">Microsoft </a></li>
+                            <li><a href="#">Samsung </a></li>
+                            <li><a href="#">Sony </a></li>
+                            <li><a href="#">Toshiba </a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-12 mt-0">
+                    <div class="col-megamenu">
+                      <ul class="list-unstyled">
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Caddy</a>
+                          <ul class="dropdown-menu2">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">K2 </a></li>
+                            <li><a href="#">Orico </a></li>
+                          </ul>
+                        </li>
+
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Laptop Bag</a>
+                          <ul class="dropdown-menu2 menu2-height">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Asus </a></li>
+                            <li><a href="#">Baseus </a></li>
+                            <li><a href="#">Exclusive </a></li>
+                            <li><a href="#">Fantech </a></li>
+                            <li><a href="#">Fiesta </a></li>
+                            <li><a href="#">K2 </a></li>
+                            <li><a href="#">Microsoft </a></li>
+                            <li><a href="#">Targus </a></li>
+                            <li><a href="#">Tucano </a></li>
+                            <li><a href="#">Ugreen </a></li>
+                            <li><a href="#">Wiwu </a></li>
+                          </ul>
+                        </li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Stand</a>
+                          <ul class="dropdown-menu2">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Cooler Master </a></li>
+                            <li><a href="#">Orico </a></li>
+                            <li><a href="#">Ugreen </a></li>
+
+                            <li><a href="#">Yuanxin </a></li>
+                          </ul>
+                        </li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Battery</a>
+                          <ul class="dropdown-menu2 menu2-height">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Acer </a></li>
+                            <li><a href="#">Apple </a></li>
+                            <li><a href="#">Asus </a></li>
+                            <li><a href="#">Dell </a></li>
+                            <li><a href="#">Fujitsu </a></li>
+                            <li><a href="#">Hp </a></li>
+                            <li><a href="#">Lenovo </a></li>
+                            <li><a href="#">Microsoft </a></li>
+                            <li><a href="#">Samsung </a></li>
+                            <li><a href="#">Sony </a></li>
+                            <li><a href="#">Toshiba </a></li>
+                          </ul>
+                        </li>
+                        <li class="hover_drop_down dropend">
+                          <span class="plusminus d-lg-none d-block">+</span
+                          ><a class="dropdown-toggle" href="#">Adapter</a>
+                          <ul class="dropdown-menu2 menu2-height">
+                            <li><a href="#">All Brands </a></li>
+                            <li><a href="#">Acer </a></li>
+                            <li><a href="#">Apple </a></li>
+                            <li><a href="#">Asus </a></li>
+                            <li><a href="#">Dell </a></li>
+                            <li><a href="#">Fujitsu </a></li>
+                            <li><a href="#">Hp </a></li>
+                            <li><a href="#">Lenovo </a></li>
+                            <li><a href="#">Microsoft </a></li>
+                            <li><a href="#">Samsung </a></li>
+                            <li><a href="#">Sony </a></li>
+                            <li><a href="#">Toshiba </a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Desktop and Server
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Gaming
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Monitor
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Tablet PC
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Printer
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Camera
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Security System
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Network
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Sound System
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Office Items
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Accessories
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Software
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Daily Life
+              </button>
+            </li>
+
+            <li class="nav-item dropdown has-megamenu">
+              <span class="plusminus main-pm text-white d-lg-none d-block"
+                >+</span
+              ><button class="nav-link main-nav-link bg-transparent border-0">
+                Store
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- last nav menu end here -->
+
+      <!-- nav section end here -->
+    </header>
+    <!-- header section start here  -->
+
+    <!-- =============================================================== -->
+
+    <main>
+      <!-- offer section -->
+
+      <section class="container navbar navbar-expand-lg buider-section">
+        <div class="container-fluid justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item ac">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><i class="fas fa-box-open"></i>Offers</a
+              >
+            </li>
+            <li class="nav-item ac">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><i class="fas fa-blog"></i>Blog</a
+              >
+            </li>
+            <li class="nav-item ac">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><i class="fas fa-box"></i>Glossary</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- offer section -->
+      <!-- single page card here -->
+
+      <section id="single-product-details" class="pt-3 single-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="product-imgs">
+                <div class="img-display">
+                  <div class="img-showcase" style="transform: translateX(0px)">
+                    <img src="image/threepics.jpg" alt="" />
+                    <img src="image/threepics.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="img-select">
+                  <div class="img-item">
+                    <a href="#" data-id="1">
+                      <img src="image/threepics.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="img-item">
+                    <a href="#" data-id="2">
+                      <img src="image/threepics.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="product-content single">
+                <div class="product-title">
+                  <h2><a href="">Embroidery Unstitched Indian Cotton</a></h2>
+                </div>
+
+                <div class="rating">
+                  <span><i class="fas fa-star stars"></i></span>
+                  <span><i class="fas fa-star stars"></i></span>
+                  <span><i class="fas fa-star stars"></i></span>
+                  <span><i class="fas fa-star stars"></i></span>
+                  <span><i class="fas fa-star stars"></i></span>
+                  <span class="review-number">(00 Reviews)</span>
+                </div>
+                <div class="category-single">
+                  <p><span>Category:</span> <a href="#">Womens Fashion</a></p>
+                </div>
+                <div class="price">
+                  <span class="rg-price"><span>2600</span> TK</span
+                  ><span class="dc-price"><span>2100</span> TK</span>
+                </div>
+
+                <div class="d-flex quantity-wraper">
+                  <div class="quantity-title">
+                    <span>Quantity:</span>
+                  </div>
+                  <div class="quantity-product">
+                    <span class="decrease"
+                      ><i class="fa-solid fa-minus"></i
+                    ></span>
+                    <input type="text" value="1" id="quantity-val" />
+                    <span class="increase"
+                      ><i class="fa-solid fa-plus"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="product-single-btn">
+                  <button name="add_to_cart" class="cart_btn">
+                    Add To Cart
+                  </button>
+
+                  <button
+                    style="padding: 10px 30px !important; margin-left: 10px"
+                    name="buy_now"
+                  >
+                    Order Now
+                  </button>
+                </div>
+                <button class="call_button">
+                  <a href="tel:01710397707"
+                    ><i class="fa-solid fa-mobile-screen-button"></i>
+                    01710397707</a
+                  >
+                </button>
+
+                <div class="single-share-wraper">
+                  <div class="share-title">
+                    <span>Share:</span>
+                  </div>
+                  <div class="single-social-icon">
+                    <a href="#" style="background: #3b5997"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="#" style="background: #e24667"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a href="#" style="background: #439665"
+                      ><i class="fa-brands fa-whatsapp"></i
+                    ></a>
+                    <a href="#" style="background: #21a1f0"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" style="background: #21a1f0"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="home-delivery-wrap">
+                  <div class="icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                  </div>
+                  <div class="home-content">
+                    <h4>Home Delivery</h4>
+                    <span>40 Minutes - 1 Hour</span>
+                  </div>
+                </div>
+                <div class="home-delivery-wrap">
+                  <div class="icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                  </div>
+                  <div class="home-content">
+                    <h4>Same Days Returns</h4>
+                    <span>Change of mind is not applicable</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- single page card here -->
+
+      <!-- specifications section start here -->
+      <div class="product-spec-section mt-2 mt-lg-2 mb-3">
+        <div class="container">
+          <div class="row g-1">
+            <div class="col-lg-9 col-12">
+              <ul class="nav nav-tabs" id="myTab">
+                <li class="nav-item">
+                  <button class="nav-link active" id="spec-tab">
+                    Specifications
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="details-tab" href="#">Details</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="qna-tab" href="#">Q&amp;A</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="review-tab" href="#">Review</a>
+                </li>
+              </ul>
+              <div class="specification-table table-responsive">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="grid-container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="grid-container">
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">General</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Brand</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Acer</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Model</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Acer Aspire 3 A315-59-332B</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Laptop Series</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Aspire</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Part No
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >NX.K6TSI.00H/UN.K6TSI.024</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Processor</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Processor Brand</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Intel</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Processor Type.
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Core i3</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Generation
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >12th (Intel)</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Processor Model</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Core i3 1215U</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Performance-Core Base Frequency</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >1.20GHz</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Efficient-Core Base Frequency</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >0.90GHz</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Processor Max Turbo Frequency
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >4.40GHz</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Performance-Core Max Turbo
+                                        Frequency</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >4.40GHz</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Efficient-Core Max Turbo
+                                        Frequency</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >3.30GHz</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Processor Core
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">6</span>
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Performance-Cores</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">2</span>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Efficient-Cores</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">4</span>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Processor Thread
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">8</span>
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >CPU Cache
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >10MB</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Memory</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >RAM
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">8GB</span>
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >RAM Type
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >DDR4</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Empty/Expansion RAM Slot</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Unmentioned</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Max. RAM Support</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Unmentioned</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Optane Memory
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">No</span>
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Optane Memory Slot</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">No</span>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Storage</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Storage</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >512GB SSD</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Installed HDD Type</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >No HDD</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >HDD RPM
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >No HDD</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >HDD Expansion Slot</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Unmentioned</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Installed SSD Type</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >NVMe PCle</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >M.2/SSD Expansion Slot</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Unmentioned</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Storage Upgrade</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Unmentioned</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Graphics</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Graphics Chipset
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Intel UHD Graphics</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Graphics Memory Accessibility</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Integrated</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Graphics Memory
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Shared</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Graphics Memory Type</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Not Applicable</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Display</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Display Size (Inch)</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >15.6</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Display Type</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >FHD LED Display</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Display Resolution</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >1920x1080</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Touch Screen</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">No</span>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Display Refresh Rate
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Unmentioned</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Secondary Screen Size</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >No Secondary Screen</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Secondary Screen Technology</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >No Secondary Screen</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Secondary Screen Resolution</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >No Secondary Screen</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Ports &amp; Slots</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Optical Drive
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">No</span>
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="modal fade"
+                                    id="exampleModal_19"
+                                    tabindex="-1"
+                                    aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true"
+                                  >
+                                    <div
+                                      class="modal-dialog modal-dialog-centered"
+                                    >
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5
+                                            class="modal-title"
+                                            id="exampleModalLabel"
+                                          >
+                                            Optical Drive
+                                          </h5>
+                                          <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                          ></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">
+                                    Network &amp; Connectivity
+                                  </h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context">LAN</span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Unmentioned</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Keyboard</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Keyboard Back-lit</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">No</span>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >RGB Keyboard</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">No</span>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div
+                                    class="row table-hr-remove"
+                                    itemprop="description"
+                                  >
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Pointing Device
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Touchpad</span
+                                      >
+                                    </div>
+                                  </div>
+
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Security</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Finger Print Sensor</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">No</span>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Software</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Operating System</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Free-Dos</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Licensed Application</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context">No</span>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Physical Description</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Color</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Pure Silver</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Warranty</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div
+                                    class="row table-hr-remove"
+                                    itemprop="description"
+                                  >
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Warranty</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >2 Year</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div
+                                    class="row table-hr-remove"
+                                    itemprop="description"
+                                  >
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Warranty Details</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >2 Year (1 Year Traveles) (1 year for
+                                        Battery and Adapter)</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Warranty Claim Duration
+                                        (Approximate)</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Estimated Warranty Claim Duration 20
+                                        Days. It may take additional time up to
+                                        40 days</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                              <div class="col-lg-2 col-12">
+                                <div
+                                  class="h-100 d-flex align-items-center mt-lg-0 mt-2"
+                                >
+                                  <h6 class="fw-bold">Additional Info</h6>
+                                </div>
+                              </div>
+                              <div class="col-lg-10 col-12">
+                                <div class="grid-container for-last-hr">
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Country Of Origin
+                                      </span>
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Taiwan</span
+                                      >
+                                      <meta itemprop="name" content="Taiwan" />
+                                    </div>
+                                  </div>
+
+                                  <div
+                                    class="modal fade"
+                                    id="exampleModal_35"
+                                    tabindex="-1"
+                                    aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true"
+                                  >
+                                    <div
+                                      class="modal-dialog modal-dialog-centered"
+                                    >
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5
+                                            class="modal-title"
+                                            id="exampleModalLabel"
+                                          >
+                                            Country Of Origin
+                                          </h5>
+                                          <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                          ></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Made in/ Assemble</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >India/China (or Country may vary by
+                                        Shipment)</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                  <div class="row table-hr-remove">
+                                    <div class="col-lg-4 col-12 ps-4 ps-lg-0">
+                                      <span class="att-title context"
+                                        >Disclaimer</span
+                                      >
+                                    </div>
+                                    <div class="col-lg-8 col-12 ps-5 ps-lg-0">
+                                      <span class="att-value context"
+                                        >Mentioned Battery Backup information is
+                                        collected from manufacturer. As per
+                                        manufacturer the backup time may vary
+                                        for different use case, settings,
+                                        applications and some other
+                                        factors.</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <hr class="details-column-hr" />
+                                </div>
+                              </div>
+                            </div>
+                            <hr />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="image-warning-text pb-lg-3 pb-2">
+                <p class="text-secondary">
+                  <span class="image-warning-text-nb">N.B.</span> Specification
+                  may differ with actual product. In that case, Ryans will
+                  execute full refund within 5 days.
+                </p>
+              </div>
+              <div class="question-gap" id="details"></div>
+              <div class="spec-details">
+                <div class="grid-container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2 class="details-header-text"><span>Details</span></h2>
+                      <div class="home-header-line"></div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body details-tab seo-footer">
+                          <h2>
+                            Features of Acer Aspire 3 A315-59-332B Laptop In
+                            Bangladesh
+                          </h2>
+                          <p>
+                            Laptop Brand - Acer, Laptop Series - Aspire, Laptop
+                            Model - Acer Aspire 3 A315-59-332B, Processor Brand
+                            - Intel, Processor Type - Core i3, Processor
+                            Generation - 12th (Intel), Processor Model - Core i3
+                            1215U, Processor Base Frequency - Unmentioned,
+                            Performance-Core Base Frequency - 1.20GHz,
+                            Efficient-Core Base Frequency - 0.90GHz, Processor
+                            Max Turbo Frequency - 4.40GHz, Performance-Core Max
+                            Turbo Frequency - 4.40GHz, Efficient-Core Max Turbo
+                            Frequency - 3.30GHz, Processor Core - 6,
+                            Performance-Cores - 2, Efficient-Cores - 4,
+                            Processor Thread - 8, Processor Cache - 10MB,
+                            Display Size - 15.6 Inch, Display Technology - FHD
+                            LED Display, Display Resolution - 1920x1080, Touch
+                            Display - No, Display Refresh Rate - Unmentioned,
+                            Secondary Screen Size - No Secondary Screen,
+                            Secondary Screen Technology - No Secondary Screen,
+                            Secondary Screen Resolution - No Secondary Screen,
+                            Memory (RAM) - 8GB, Memory Type - DDR4, Empty Memory
+                            Slot - Unmentioned, Max Memory Support -
+                            Unmentioned, Optane Memory - No, Optane Memory Slot
+                            - No, Storage - 512GB SSD, Installed HDD Type - No
+                            HDD, HDD RPM - No HDD, HDD Expansion Slot -
+                            Unmentioned, Installed SSD Type - NVMe PCle, SSD
+                            Expansion Slot - Unmentioned, Storage Upgrade -
+                            Unmentioned, Optical Drive - No-ODD, Graphics
+                            Chipset - Intel UHD Graphics, Graphics Memory
+                            Accessibility - Integrated, Graphics Memory -
+                            Shared, Graphics Memory Type - Not Applicable, LAN -
+                            Unmentioned, Keyboard Back-lit - No, RGB Keyboard -
+                            No, Pointing Device - Touchpad, Finger Print Sensor
+                            - No, Operating System - Free-Dos, Color - Pure
+                            Silver, Weight - Unmentioned, Licensed Application -
+                            No, Warranty - 2 Year (1 Year Traveles) (1 year for
+                            Battery and Adapter), Warranty Claim Duration
+                            (Approximate) - Estimated Warranty Claim Duration 20
+                            Days. It may take additional time up to 40 days,
+                            Part Number - NX.K6TSI.00H/UN.K6TSI.024, Country of
+                            Origin - Taiwan, Made in / Assembled in -
+                            India/China, Disclaimer - Mentioned Battery Backup
+                            information is collected from manufacturer. As per
+                            manufacturer the backup time may vary for different
+                            use case, settings, applications and some other
+                            factors.
+                          </p>
+                          <h2>
+                            What is the price of Acer Aspire 3 A315-59-332B
+                            Laptop In Bangladesh?
+                          </h2>
+                          <p>
+                            The price of Acer Aspire 3 A315-59-332B Laptop
+                            starts from 57,500 . The price may vary due to your
+                            customization and product availability. You can buy
+                            Acer Aspire 3 A315-59-332B Laptop from our website
+                            or visit our showrooms nearby.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="question-gap" id="qna"></div>
+              <div class="question-answers">
+                <div class="grid-container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2 class="details-header-text">
+                        <span>QUESTION &amp; ANSWER</span>
+                      </h2>
+                      <div class="home-header-line"></div>
+                    </div>
+                    <div class="col-12">
+                      <div class="fw-bold mt-2 mb-2">Customer Questions</div>
+                      <p class="mb-1 mt-1">No questions asked yet.</p>
+                    </div>
+                    <div class="col-12">
+                      <div class="fw-bold mt-2 mb-2">Your Question</div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <form class="question-form" action="" method="">
+                            <input type="hidden" name="_token" value="" />
+                            <input
+                              type="hidden"
+                              id="customer_id"
+                              name="customer_id"
+                              value=""
+                            />
+                            <input type="hidden" name="referer_url" value="" />
+                            <div class="form-floating mb-3">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="floatingInput"
+                                placeholder="name"
+                                name="customer_name"
+                                required=""
+                              />
+                              <label for="floatingInput">Name</label>
+                            </div>
+                            <div class="form-floating">
+                              <textarea
+                                class="form-control"
+                                placeholder="Leave a comment here"
+                                id="floatingTextarea1"
+                                name="question"
+                                required=""
+                              ></textarea>
+                              <label>Question</label>
+                            </div>
+                            <div class="col-auto">
+                              <button
+                                type="submit"
+                                class="btn btn-sm cat-cart-btn mt-2 mb-1"
+                              >
+                                Submit Question
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="question-gap" id="review"></div>
+              <div class="customer-reviews">
+                <div class="grid-container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2 class="details-header-text"><span>REVIEW</span></h2>
+                      <div class="home-header-line"></div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="fw-bold mt-2 mb-2">Your Review</div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <form class="question-form" action="#" method="POST">
+                            <input type="hidden" name="_token" value="" />
+                            <div class="rating">
+                              <input
+                                id="star5"
+                                name="star"
+                                type="radio"
+                                value="5"
+                                class="radio-btn hide"
+                              />
+                              <label for="star5">☆</label>
+                              <input
+                                id="star4"
+                                name="star"
+                                type="radio"
+                                value="4"
+                                class="radio-btn hide"
+                              />
+                              <label for="star4">☆</label>
+                              <input
+                                id="star3"
+                                name="star"
+                                type="radio"
+                                value="3"
+                                class="radio-btn hide"
+                              />
+                              <label for="star3">☆</label>
+                              <input
+                                id="star2"
+                                name="star"
+                                type="radio"
+                                value="2"
+                                class="radio-btn hide"
+                              />
+                              <label for="star2">☆</label>
+                              <input
+                                id="star1"
+                                name="star"
+                                type="radio"
+                                value="1"
+                                class="radio-btn hide"
+                              />
+                              <label for="star1">☆</label>
+                              <div class="clear"></div>
+                            </div>
+                            <div class="form-floating mb-3">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="floatingInput2"
+                                placeholder="name"
+                                name="name"
+                              />
+                              <label for="floatingInput2">Name</label>
+                            </div>
+                            <div class="form-floating">
+                              <textarea
+                                class="form-control"
+                                placeholder="Leave a comment here"
+                                id="floatingTextarea2"
+                                name="review"
+                              ></textarea>
+                              <label>Review</label>
+                            </div>
+                            <input type="hidden" value="" name="product_id" />
+                            <div class="col-auto">
+                              <button
+                                type="submit"
+                                class="btn btn-sm cat-cart-btn mt-2 mb-1"
+                              >
+                                Submit Review
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="fw-bold mt-2">Customer Reviews</div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <div class="qna-body">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <div class="fw-bold qa">Smart</div>
+                                <div class="qa-w">
+                                  <div class="rating">
+                                    <span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span>
+                                    <span class="review-text">
+                                      By Sourov , 31 Dec 2023 11:34:07 AM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <div class="qna-body">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <div class="fw-bold qa">Amazing product</div>
+                                <div class="qa-w">
+                                  <div class="rating">
+                                    <span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span>
+                                    <span class="review-text">
+                                      By WAHID , 31 Dec 2023 11:11:21 AM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <div class="qna-body">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <div class="fw-bold qa">
+                                  Waiting for this product
+                                </div>
+                                <div class="qa-w">
+                                  <div class="rating">
+                                    <span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span>
+                                    <span class="review-text">
+                                      By Sohel nTaleb , 27 Dec 2023 11:38:04
+                                      AM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <div class="qna-body">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <div class="fw-bold qa">Amazing</div>
+                                <div class="qa-w">
+                                  <div class="rating">
+                                    <span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span>
+                                    <span class="review-text">
+                                      By Rabbi , 26 Dec 2023 11:55:00 AM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <div class="qna-body">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <div class="fw-bold qa">
+                                  Perfect to get more out of work, study, or
+                                  play
+                                </div>
+                                <div class="qa-w">
+                                  <div class="rating">
+                                    <span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span>
+                                    <span class="review-text">
+                                      By Masud Rana , 26 Dec 2023 11:44:15
+                                      AM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <div class="qna-body">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <div class="fw-bold qa">Excellent product</div>
+                                <div class="qa-w">
+                                  <div class="rating">
+                                    <span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span>
+                                    <span class="review-text">
+                                      By Md. Shahin Hossain , 25 Dec 2023
+                                      03:28:02 PM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <div class="qna-body">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <div class="fw-bold qa">Works Great</div>
+                                <div class="qa-w">
+                                  <div class="rating">
+                                    <span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span>
+                                    <span class="review-text">
+                                      By Progga , 25 Dec 2023 03:13:29 PM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mt-2">
+                        <div class="card-body">
+                          <div class="qna-body">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <div class="fw-bold qa">Good quality</div>
+                                <div class="qa-w">
+                                  <div class="rating">
+                                    <span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span
+                                    ><span class="fas fa-star stars"></span>
+                                    <span class="review-text">
+                                      By Meherab , 25 Dec 2023 10:39:53 AM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="grid-container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2 class="details-header-text">
+                      <span>Similar Products</span>
+                    </h2>
+                    <div class="home-header-line"></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="grid-container list-view list-view-details list-view-mobile mt-2"
+              >
+                <div class="row product-home-card product-category-card">
+                  <div class="col-12 category-single-product">
+                    <div class="card similar-product-card">
+                      <div class="image-box">
+                        <a href=""
+                          ><img
+                            src="image/03-LG-27EP950-BProfessional-Monitor-Main-Slide_1705552285.jpg"
+                            class="card-img-top"
+                            alt="Asus"
+                        /></a>
+                      </div>
+                      <div class="card-body text-center">
+                        <p class="card-text p-0 m-0">
+                          <a href=""
+                            >Asus ROG Strix G15 G513RM AMD Ryzen 7 6800 ...</a
+                          >
+                        </p>
+
+                        <p class="pr-text cat-sp-text pb-1">Tk 182,900</p>
+                        <div class="pt-2 details-mobile-btn">
+                          <form method="POST" action="">
+                            <input type="hidden" name="_token" value="" />
+                            <input type="hidden" name="customer_id" value="" />
+                            <input type="hidden" name="product_id" value="" />
+                            <button
+                              class="btn grid-cart-btn cart-btn px-1 cat-cart-btn"
+                              type="submit"
+                            >
+                              <span>Add to Cart</span>
+                            </button>
+                          </form>
+                          <form method="POST" action="">
+                            <input type="hidden" name="_token" value="" />
+                            <input type="hidden" name="customer_id" value="" />
+                            <input type="hidden" name="product_id" value="" />
+                            <button
+                              type="submit"
+                              class="btn grid-cart-btn cart-btn px-1 ms-2"
+                              title="Add to Compare"
+                              aria-label="compare"
+                            >
+                              <i class="fas fa-exchange-alt"></i>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 category-single-product">
+                    <div class="card similar-product-card">
+                      <div class="image-box">
+                        <a href=""
+                          ><img src="image/ai.jpg" class="card-img-top" alt=""
+                        /></a>
+                      </div>
+                      <div class="card-body text-center">
+                        <p class="card-text p-0 m-0">
+                          <a href=""
+                            >Lenovo IdeaPad Gaming 3i 15IHU Intel Core ...</a
+                          >
+                        </p>
+
+                        <p class="pr-text cat-sp-text pb-1">Tk 132,000</p>
+                        <div class="pt-2 details-mobile-btn">
+                          <form method="POST" action="">
+                            <input type="hidden" name="_token" value="" />
+                            <input type="hidden" name="customer_id" value="" />
+                            <input type="hidden" name="product_id" value="" />
+                            <button
+                              class="btn grid-cart-btn cart-btn px-1 cat-cart-btn"
+                              type="submit"
+                            >
+                              <span>Add to Cart</span>
+                            </button>
+                          </form>
+                          <form method="POST" action="">
+                            <input type="hidden" name="_token" value="" />
+                            <input type="hidden" name="customer_id" value="" />
+                            <input type="hidden" name="product_id" value="" />
+                            <button
+                              type="submit"
+                              class="btn grid-cart-btn cart-btn px-1 ms-2"
+                              title="Add to Compare"
+                              aria-label="compare"
+                            >
+                              <i class="fas fa-exchange-alt"></i>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 category-single-product">
+                    <div class="card similar-product-card">
+                      <div class="image-box">
+                        <a href=""
+                          ><img
+                            src="image/asus-21575699746.webp"
+                            class="card-img-top"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="card-body text-center">
+                        <p class="card-text p-0 m-0">
+                          <a href=""
+                            >Dell Inspiron 15 3515 AMD Ryzen 3 3250U 8G ...</a
+                          >
+                        </p>
+
+                        <p class="pr-text cat-sp-text pb-1">Tk 51,500</p>
+                        <div class="pt-2 details-mobile-btn">
+                          <form method="POST" action="">
+                            <input type="hidden" name="_token" value="" />
+                            <input type="hidden" name="customer_id" value="" />
+                            <input type="hidden" name="product_id" value="" />
+                            <button
+                              class="btn grid-cart-btn cart-btn px-1 cat-cart-btn"
+                              type="submit"
+                            >
+                              <span>Add to Cart</span>
+                            </button>
+                          </form>
+                          <form method="POST" action="">
+                            <input type="hidden" name="_token" value="" />
+                            <input type="hidden" name="customer_id" value="" />
+                            <input type="hidden" name="product_id" value="" />
+                            <button
+                              type="submit"
+                              class="btn grid-cart-btn cart-btn px-1 ms-2"
+                              title="Add to Compare"
+                              aria-label="compare"
+                            >
+                              <i class="fas fa-exchange-alt"></i>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="link_view_more_attr ps-3"
+                    id="link_view_more_attr_B"
+                    data-attr_set="B"
+                    href="javascript:"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- specifications section end here -->
+
+      <!-- relavant product start here -->
+
+      <!--POS System  section start here -->
+      <div class="collection-section mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="d-flex justify-content-between see-cat-link">
+                <h2 class="home-header-text">
+                  <span
+                    ><a class="text-white home-header-link" href="#"
+                      >Related Products</a
+                    ></span
+                  >
+                </h2>
+                <a href="#">See all Related Products</a>
+              </div>
+              <div class="home-header-line"></div>
+            </div>
+          </div>
+
+          <div class="row g-2 p-0 pt-0 product-home-card mt-1">
+            <!-- card -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2">
+              <div class="card h-100 m-0">
+                <div class="image-box">
+                  <a href="#">
+                    <img
+                      src="image/sunlux-xl-9309b-1d-laser-wireless-handheld-11688286007.webp"
+                      class="card-img-top1"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="sp-text-link">Professional Laptop</a>
+                  <p class="card-text p-0 m-0">
+                    <a href="#"> Acer Aspire 3 A315-59-332B</a>
+                  </p>
+                  <p class="sp-text">Tk 57,500</p>
+                  <div class="product-btn">
+                    <a href="#">Buy New</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2">
+              <div class="card h-100 m-0">
+                <div class="image-box">
+                  <a href="#">
+                    <img
+                      src="image/rongta-rp328-ub-thermal-pos-receipt-printer-usb-11575877301.webp"
+                      class="card-img-top1"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="sp-text-link">Professional Laptop</a>
+                  <p class="card-text p-0 m-0">
+                    <a href="#"> Acer Aspire 3 A315-59-332B</a>
+                  </p>
+                  <p class="sp-text">Tk 57,500</p>
+                  <div class="product-btn">
+                    <a href="#">Buy New</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2">
+              <div class="card h-100 m-0">
+                <div class="image-box">
+                  <a href="#">
+                    <img
+                      src="image/ryans-pos-billing-counter-package-rpbc-02-1x-11702276713.webp"
+                      class="card-img-top1"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="sp-text-link">Professional Laptop</a>
+                  <p class="card-text p-0 m-0">
+                    <a href="#"> Acer Aspire 3 A315-59-332B</a>
+                  </p>
+                  <p class="sp-text">Tk 57,500</p>
+                  <div class="product-btn">
+                    <a href="#">Buy New</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2">
+              <div class="card h-100 m-0">
+                <div class="image-box">
+                  <a href="#">
+                    <img
+                      src="image/rongta-rp400rp400h-u-black-thermal-transfer-11702097196.webp"
+                      class="card-img-top1"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="sp-text-link">Professional Laptop</a>
+                  <p class="card-text p-0 m-0">
+                    <a href="#"> Acer Aspire 3 A315-59-332B</a>
+                  </p>
+                  <p class="sp-text">Tk 57,500</p>
+                  <div class="product-btn">
+                    <a href="#">Buy New</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2">
+              <div class="card h-100 m-0">
+                <div class="image-box">
+                  <a href="#">
+                    <img
+                      src="image/rongta-rt420f-pos-cash-drawer-5-bill-8-coin-11695291147.webp"
+                      class="card-img-top1"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="sp-text-link">Professional Laptop</a>
+                  <p class="card-text p-0 m-0">
+                    <a href="#"> Acer Aspire 3 A315-59-332B</a>
+                  </p>
+                  <p class="sp-text">Tk 57,500</p>
+                  <div class="product-btn">
+                    <a href="#">Buy New</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+
+            <!-- card -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-2">
+              <div class="card h-100 m-0">
+                <div class="image-box">
+                  <a href="#">
+                    <img
+                      src="image/ryans-pos-inventory-package-rpip-01-1x-full-set-11702212754.webp"
+                      class="card-img-top1"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="sp-text-link">Professional Laptop</a>
+                  <p class="card-text p-0 m-0">
+                    <a href="#"> Acer Aspire 3 A315-59-332B</a>
+                  </p>
+                  <p class="sp-text">Tk 57,500</p>
+                  <div class="product-btn">
+                    <a href="#">Buy New</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+          </div>
+        </div>
+      </div>
+
+      <!--POS System section end here -->
+      <!-- relavant product start here -->
+    </main>
+
+    <div></div>
+
+    <!-- =========================================================================== -->
+
+    <!-- footer section start here -->
+    <div class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 footer-info">
+            <a href="#"
+              ><img
+                src="image/ryans-logo.svg"
+                alt=""
+                class="footer-logo"
+                width="100%"
+                height="100%"
+            /></a>
+            <div class="social-links mt-3">
+              <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fab fa-youtube"></i></a>
+
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <div class="footer-complaint-link">
+              <a
+                class="text-white text-decoration-none ms-2 ms-lg-4 bg-danger"
+                href="#"
+              >
+                Complaint Box
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 footer-links extra-border1">
+            <ul>
+              <li><a href="#"> About us </a></li>
+              <li><a href="#"> Branches &amp; Pickup Points </a></li>
+              <li><a href="#"> Warranty </a></li>
+              <li><a href="#"> EMI </a></li>
+              <li><a href="#"> Cookie Policy </a></li>
+              <li><a href="#"> ডিজিটাল কমার্স নির্দেশিকা ২০২১ </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-6 footer-links extra-border2">
+            <ul>
+              <li><a href="#"> Order Procedure </a></li>
+              <li><a href="#"> Home Delivery </a></li>
+              <li><a href="#"> Return &amp; Refund Policy </a></li>
+              <li><a href="#"> Payment Method </a></li>
+              <li><a href="#"> Terms &amp; Conditions </a></li>
+              <li><a href="#"> Privacy policy </a></li>
+              <li class="glossary-in-footer"><a href="#">Glossary</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-links footer-contact">
+            <ul>
+              <li class="contact-us-text text-white pb-0">Contact Us</li>
+            </ul>
+            <p>
+              Head office <br />
+              Ryans Computers Limited <br />
+              Kusholi Bhaban, 4th Floor, 238/1 Begum Rokeya Sharani, Agargaon,
+              Dhaka-1207 <br />
+              <span class="d-lg-none">
+                <i class="fa fa-envelope"></i> info@ryansbd.com<br />
+              </span>
+              <span
+                class="d-flex justify-content-center justify-content-lg-start align-items-center"
+              >
+                <i class="fas fa-phone-alt"></i>
+                <a
+                  class="text-decoration-none text-white p-0"
+                  href="tel:8809638442121"
+                  >+8809638442121</a
+                >,
+                <a
+                  class="text-decoration-none text-white p-0"
+                  href="tel:8809604442121"
+                  >+8809604442121</a
+                ></span
+              >
+              <i class="fab fa-whatsapp ws-color"></i>
+              <a class="text-decoration-none text-white p-0" href="#">
+                +8801755513900</a
+              >
+              (Message only)<br />
+              <i class="fas fa-map-marker-alt map-icon"></i> Map Link:
+              <a class="home-page-footer-seo-anchor-link-color" href="#">
+                https://tinyurl.com/ryans-head-office</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          Prices are subject to change without any prior notice.
+        </div>
+        <div class="copyright pt-1">
+          Ryans Computers © 2024 All Rights Reserved. Designed by Ryans
+          Computers Ltd.
+        </div>
+      </div>
+    </div>
+    <!-- footer section end here -->
+
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
